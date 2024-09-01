@@ -6,20 +6,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Locale;
+import jakarta.servlet.http.HttpServletRequest;  // Import klasy HttpServletRequest z pakietu jakarta.servlet
+import jakarta.servlet.http.HttpServletResponse; // Import klasy HttpServletResponse z pakietu jakarta.servlet
+import java.util.Locale; // Import klasy Locale do obsługi lokalizacji
 
 @Controller
 public class LanguageController {
 
+    // Metoda obsługująca żądanie GET na ścieżce /change-language
     @GetMapping("/change-language")
     public String changeLanguage(@RequestParam("lang") String lang, HttpServletRequest request, HttpServletResponse response) {
-        LocaleResolver localeResolver = RequestContextUtils.getLocaleResolver(request);
+        LocaleResolver localeResolver = RequestContextUtils.getLocaleResolver(request); // Pobiera LocaleResolver do zmiany języka
         if (localeResolver != null) {
-            Locale locale = new Locale(lang);
-            localeResolver.setLocale(request, response, locale);
+            Locale locale = new Locale(lang); // Tworzy nową instancję Locale na podstawie parametru lang
+            localeResolver.setLocale(request, response, locale); // Ustawia nowy język w LocaleResolver
         }
-        return "redirect:/"; // Po zmianie języka przekierowanie na stronę główną
+        return "redirect:/"; // Przekierowanie na stronę główną po zmianie języka
     }
 }

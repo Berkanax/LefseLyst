@@ -24,6 +24,14 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+    <!-- Zależność do obsługi serwletów (jakarta) -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version> <!-- Upewnij się, że wersja jest zgodna z Twoją wersją Spring Boot -->
+      <scope>provided</scope>
+    </dependency>
+
     <!-- Zależność do Spring Boot Starter Data JPA -->
     <!-- Umożliwia interakcję z bazami danych za pomocą JPA (Java Persistence API) -->
     <dependency>
