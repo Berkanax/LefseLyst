@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion> <!-- Wersja modelu POM, standardowo 4.0.0 -->
+
+  <groupId>com.lefselyst</groupId> <!-- Unikalna grupa projektu, zwykle odnosi się do nazwy domeny organizacji -->
+  <artifactId>LefseLyst</artifactId> <!-- Unikalna nazwa artefaktu, czyli naszej aplikacji -->
+  <packaging>jar</packaging> <!-- Typ paczki, tutaj jest to jar (Java Archive), typowy dla aplikacji Java -->
+  <version>1.0-SNAPSHOT</version> <!-- Wersja aplikacji, SNAPSHOT oznacza, że to wersja rozwojowa -->
+  <name>LefseLyst</name> <!-- Nazwa projektu, używana w dokumentacji i logach Maven -->
+
+  <parent>
+    <groupId>org.springframework.boot</groupId> <!-- Grupa rodzica, Spring Boot parent -->
+    <artifactId>spring-boot-starter-parent</artifactId> <!-- Artefakt rodzica, Spring Boot starter parent -->
+    <version>3.1.4</version> <!-- Wersja rodzica, która ustawia domyślne wersje zależności i konfiguracje dla Spring Boot -->
+    <relativePath/> <!-- Ścieżka do pliku POM rodzica, tutaj wskazuje, że znajduje się w centralnym repozytorium -->
+  </parent>
+
+  <dependencies>
+    <!-- Zależność do Spring Boot Starter Web -->
+    <!-- Umożliwia tworzenie aplikacji webowych, obsługę serwletów, REST API -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- Zależność do Spring Boot Starter Data JPA -->
+    <!-- Umożliwia interakcję z bazami danych za pomocą JPA (Java Persistence API) -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <!-- Zależność do MySQL Connector -->
+    <!-- Driver do połączenia z bazą danych MySQL -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version> <!-- Wersja MySQL Connector, ważne dla zgodności z wersją MySQL -->
+      <scope>runtime</scope> <!-- Zależność używana tylko w czasie działania aplikacji, nie w czasie kompilacji -->
+    </dependency>
+
+    <!-- Opcjonalna zależność do Spring Boot Starter Thymeleaf -->
+    <!-- Thymeleaf jest silnikiem szablonów do generowania stron HTML -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+
+    <!-- Opcjonalna zależność do Spring Boot Starter Security -->
+    <!-- Dodaje wsparcie dla bezpieczeństwa, np. uwierzytelniania użytkowników -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+
+    <!-- Zależność do Spring Boot Starter Test -->
+    <!-- Zawiera biblioteki do testowania aplikacji, w tym JUnit, AssertJ, Mockito -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope> <!-- Zależność używana tylko w czasie testowania, nie w czasie działania aplikacji -->
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Plugin Spring Boot Maven -->
+      <!-- Umożliwia uruchamianie i pakowanie aplikacji jako samodzielny JAR -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

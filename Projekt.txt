@@ -1,0 +1,49 @@
+Cel aplikacji:
+Aplikacja LefseLyst jest dedykowana dla „Godt og hjemmelagets kafe og Landhandel”, aby wspierać zamówienia na miejscu i na wynos, informować o eventach i jarmarkach, oferować system lojalnościowy oraz umożliwić ocenę usług przez użytkowników. Aplikacja ma wzmocnić lokalną markę i poprawić doświadczenia klientów.
+
+Główne funkcje aplikacji LefseLyst:
+System zamawiania (Na miejscu / Na wynos):
+
+Użytkownicy mogą składać zamówienia na miejscu w kawiarni lub na wynos, wybierając produkty z menu.
+Powiadomienia lokalne i eventy:
+
+Użytkownicy otrzymują powiadomienia o jarmarkach i eventach w ich okolicy.
+Interaktywna mapa pokazująca lokalizacje eventów i możliwość zamówienia lefse na wynos.
+System płatności:
+
+Elektroniczna płatność za zamówienia, z obsługą różnych metod płatności (np. Vipps, Apple Pay, Google Pay).
+System lojalnościowy:
+
+Zbieranie punktów za zamówienia, które można wymieniać na darmowe produkty, np. kawę.
+System oceny i sugestii:
+
+Użytkownicy mogą oceniać kawiarnie, zostawiać sugestie i zgłaszać problemy.
+Dodatkowe funkcje:
+
+Kupony i oferty specjalne: Kupon dnia, spersonalizowane oferty na podstawie historii zakupów.
+Program poleceń: Zapraszanie znajomych do aplikacji, nagrody za rekomendacje.
+Integracja z kalendarzem: Możliwość dodania eventów do kalendarza użytkownika.
+Powiadomienia push i chat: Informacje o stanie zamówienia, możliwość chatu z kawiarnią.
+Branding:
+Kolorystyka: Biała, czarna, czerwona, spójna z logo firmy.
+Logo: Oryginalne logo wyświetlane po uruchomieniu aplikacji, widoczne na głównych ekranach.
+Plan działania:
+Konfiguracja projektu:
+
+Używamy IntelliJ IDEA do stworzenia projektu w Javie z użyciem Spring Boot jako frameworka.
+Ustawiamy zarządzanie zależnościami za pomocą Maven lub Gradle.
+Implementacja backendu:
+
+Utworzenie API: Stworzenie endpointów do obsługi zamówień, płatności, systemu lojalnościowego, powiadomień i eventów.
+Baza danych: Konfiguracja bazy danych (MySQL) do przechowywania informacji o użytkownikach, zamówieniach, punktach lojalnościowych, eventach.
+Tworzenie interfejsu użytkownika (Frontend):
+
+Android Studio: Rozpoczęcie pracy nad aplikacją mobilną. Stworzenie ekranów dla głównych funkcji (zamówienia, mapa eventów, system lojalnościowy).
+Projektowanie interfejsu: Makiety i prototypy UI, uwzględniające branding i kolorystykę marki LefseLyst.
+Testowanie:
+
+Przeprowadzenie testów funkcjonalności aplikacji na różnych urządzeniach.
+Zbieranie feedbacku od potencjalnych użytkowników, wprowadzenie poprawek i optymalizacja aplikacji.
+Prezentacja wersji demo:
+
+Przygotowanie wersji demo aplikacji do prezentacji właścicielom firmy. Podkreślenie korzyści i funkcji, które usprawniają działalność i poprawiają doświadczenia klientów.

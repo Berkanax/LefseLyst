@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LefseLyst</title>
+</head>
+<body>
+<h1 th:text="#{welcome.message}">Default Welcome Message</h1>
+<button th:text="#{order.now}">Default Order Button</button>
+
+<!-- Link do zmiany języka -->
+<a href="/change-language?lang=en">English</a> |
+<a href="/change-language?lang=no">Norsk</a> |
+<a href="/change-language?lang=es">Español</a> |
+<a href="/change-language?lang=pl">Polski</a>
+</body>
+</html>
